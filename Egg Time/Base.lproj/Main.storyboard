@@ -27,12 +27,12 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, Chose How do you like your Eggs ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nLt-qP-tQb">
                                                 <rect key="frame" x="8" y="8" width="398" height="246.5"/>
-                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
-                                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.89712649828767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                <color key="textColor" red="0.2869695444751077" green="0.32344918853135274" blue="0.13025169804816344" alpha="0.92168771404109584" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.250019828680203" green="0.250019828680203" blue="0.250019828680203" alpha="0.44212863869863012" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.97685309077860283" green="0.86689244833635226" blue="1" alpha="0.50684050161160366" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="nLt-qP-tQb" firstAttribute="leading" secondItem="acS-tY-lwE" secondAttribute="leading" constant="8" id="0kq-ul-I6A"/>
                                             <constraint firstItem="nLt-qP-tQb" firstAttribute="top" secondItem="acS-tY-lwE" secondAttribute="top" constant="8" id="9YS-f7-f8q"/>
@@ -46,27 +46,29 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa1-Ch-Hb1" userLabel="Hard Egg">
                                                 <rect key="frame" x="0.0" y="0.0" width="131.5" height="263"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvr-g5-3sK">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="oBI-if-8Ch">
                                                         <rect key="frame" x="8" y="8" width="115.5" height="247"/>
-                                                        <color key="tintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRm-Cl-TZO">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbJ-av-5jX">
                                                         <rect key="frame" x="8" y="8" width="115.5" height="247"/>
                                                         <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="18"/>
-                                                        <state key="normal" title="Hard ">
+                                                        <state key="normal" title="Hard">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcu-bc-vVT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="mvr-g5-3sK" secondAttribute="trailing" constant="8" id="19a-ck-toe"/>
-                                                    <constraint firstAttribute="trailing" secondItem="vRm-Cl-TZO" secondAttribute="trailing" constant="8" id="3NJ-PX-ICc"/>
-                                                    <constraint firstItem="vRm-Cl-TZO" firstAttribute="top" secondItem="Wa1-Ch-Hb1" secondAttribute="top" constant="8" id="5mj-kD-Qz7"/>
-                                                    <constraint firstAttribute="bottom" secondItem="mvr-g5-3sK" secondAttribute="bottom" constant="8" id="B1l-Dx-thE"/>
-                                                    <constraint firstAttribute="bottom" secondItem="vRm-Cl-TZO" secondAttribute="bottom" constant="8" id="Lfd-ne-dGl"/>
-                                                    <constraint firstItem="mvr-g5-3sK" firstAttribute="leading" secondItem="Wa1-Ch-Hb1" secondAttribute="leading" constant="8" id="Qtp-bm-2da"/>
-                                                    <constraint firstItem="mvr-g5-3sK" firstAttribute="top" secondItem="Wa1-Ch-Hb1" secondAttribute="top" constant="8" id="UYk-VJ-qnP"/>
-                                                    <constraint firstItem="vRm-Cl-TZO" firstAttribute="leading" secondItem="Wa1-Ch-Hb1" secondAttribute="leading" constant="8" id="vx3-y5-vYx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GbJ-av-5jX" secondAttribute="bottom" constant="8" id="389-ty-i9F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oBI-if-8Ch" secondAttribute="bottom" constant="8" id="5mB-XZ-I9A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oBI-if-8Ch" secondAttribute="trailing" constant="8" id="F9S-0p-Nbz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GbJ-av-5jX" secondAttribute="trailing" constant="8" id="OfM-uR-JXu"/>
+                                                    <constraint firstItem="GbJ-av-5jX" firstAttribute="top" secondItem="Wa1-Ch-Hb1" secondAttribute="top" constant="8" id="c01-Zd-2Np"/>
+                                                    <constraint firstItem="oBI-if-8Ch" firstAttribute="leading" secondItem="Wa1-Ch-Hb1" secondAttribute="leading" constant="8" id="hWG-aR-cry"/>
+                                                    <constraint firstItem="GbJ-av-5jX" firstAttribute="leading" secondItem="Wa1-Ch-Hb1" secondAttribute="leading" constant="8" id="jwo-ZB-0KE"/>
+                                                    <constraint firstItem="oBI-if-8Ch" firstAttribute="top" secondItem="Wa1-Ch-Hb1" secondAttribute="top" constant="8" id="oL4-ef-1Hc"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5O-QU-Orf" userLabel="Medium Egg">
@@ -81,6 +83,9 @@
                                                         <state key="normal" title="Medium">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REr-sg-yl2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -106,6 +111,9 @@
                                                         <state key="normal" title="Soft">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8PK-ef-obH"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -121,9 +129,20 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AB2-qX-gVE">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AB2-qX-gVE" userLabel="Timer View">
                                         <rect key="frame" x="0.0" y="555.5" width="414" height="262.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vr6-HJ-ge5">
+                                                <rect key="frame" x="0.0" y="129" width="414" height="4"/>
+                                                <color key="progressTintColor" systemColor="systemYellowColor"/>
+                                                <color key="trackTintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vr6-HJ-ge5" secondAttribute="trailing" id="4p2-3u-kQ7"/>
+                                            <constraint firstItem="vr6-HJ-ge5" firstAttribute="centerY" secondItem="AB2-qX-gVE" secondAttribute="centerY" id="9A7-w9-mqs"/>
+                                            <constraint firstItem="vr6-HJ-ge5" firstAttribute="leading" secondItem="AB2-qX-gVE" secondAttribute="leading" id="EhT-uu-ONJ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -141,6 +160,10 @@
                             <constraint firstItem="Mz5-Vg-mGL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mIC-oM-P5R"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="vr6-HJ-ge5" id="RyQ-Q7-Wdc"/>
+                        <outlet property="titleLevel" destination="nLt-qP-tQb" id="p5o-EY-5CP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,6 +177,9 @@
         <image name="soft_egg" width="287" height="365"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
