@@ -29,7 +29,8 @@
                                                 <rect key="frame" x="8" y="8" width="398" height="246.5"/>
                                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
                                                 <color key="textColor" red="0.2869695444751077" green="0.32344918853135274" blue="0.13025169804816344" alpha="0.92168771404109584" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="shadowColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.93696489729999999" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97685309077860283" green="0.86689244833635226" blue="1" alpha="0.50684050161160366" colorSpace="custom" customColorSpace="displayP3"/>
